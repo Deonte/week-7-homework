@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>
+</string>
+			<key>ModifiedRange</key>
+			<string>{100, 1}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{100, 0}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Create a work item for both tasks. 
+// Add the getActorTask and getMovieTask to the Dispatch Work Item created. 
+let actorTaskWorkItem = DispatchWorkItem {
+    getActorTask()
+}
+
+let movieTaskWorkItem = DispatchWorkItem {
+    getMovieTask()
+}
+
+// Cancel the work item after 10 seconds using the asyncAfter provided. 
+</string>
+			<key>ModifiedRange</key>
+			<string>{487, 319}</string>
+			<key>OriginalContent</key>
+			<string>
+// create a work item for both task 
+
+
+
+// Add the getActorTask and getMovieTask to the Dispatch Work Item created 
+
+
+// cancel the work item after 10 seconds using the asyncAfter provided. 
+</string>
+			<key>OriginalRange</key>
+			<string>{486, 192}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>    // Add Code to cancel workItem here.
+    actorTaskWorkItem.cancel()
+    movieTaskWorkItem.cancel()
+</string>
+			<key>ModifiedRange</key>
+			<string>{906, 103}</string>
+			<key>OriginalContent</key>
+			<string>    // Add Code to cancel workItem here
+</string>
+			<key>OriginalRange</key>
+			<string>{778, 40}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Call perform on the work item. 
+actorTaskWorkItem.perform()
+movieTaskWorkItem.perform()
+</string>
+			<key>ModifiedRange</key>
+			<string>{1012, 91}</string>
+			<key>OriginalContent</key>
+			<string>
+// call perform on the workitem 
+
+</string>
+			<key>OriginalRange</key>
+			<string>{821, 35}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Question: why is the Movie task completed yet the dispatch work item has been cancelled?
+// Calling cancel will stop tasks from executing if they have yet to be run, but won't halt something that's already executing.
+</string>
+			<key>ModifiedRange</key>
+			<string>{1146, 220}</string>
+			<key>OriginalContent</key>
+			<string>
+// Qestion: why is the Movie task completed yet the dispatch work item has been cancelled ?
+</string>
+			<key>OriginalRange</key>
+			<string>{899, 93}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
